@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Jedy Detail View Controller-->
         <scene sceneID="FWI-W2-i0v">
             <objects>
-                <viewController id="o60-A7-5R5" sceneMemberID="viewController">
+                <viewController id="o60-A7-5R5" customClass="JedyDetailViewController" customModule="designable_custom_view" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="M4e-kh-tiD"/>
                         <viewControllerLayoutGuide type="bottom" id="vM3-cZ-Efb"/>
@@ -16,6 +16,18 @@
                     <view key="view" contentMode="scaleToFill" id="Ocx-Id-pbm">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oc0-LD-sHm">
+                                <rect key="frame" x="20" y="28" width="560" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwF-Sc-qOY">
+                                <rect key="frame" x="384" y="302" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
@@ -55,7 +67,7 @@
         <!--Jedy Lightsabers-->
         <scene sceneID="EDJ-p3-tVF">
             <objects>
-                <viewController title="Jedy Lightsabers" id="RNc-Zw-coJ" sceneMemberID="viewController">
+                <viewController title="Jedy Lightsabers" id="RNc-Zw-coJ" customClass="JedyContainerViewController" customModule="designable_custom_view" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VCH-Pb-Gcx"/>
                         <viewControllerLayoutGuide type="bottom" id="8jd-Z2-bbg"/>
@@ -74,31 +86,29 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
-                    <navigationItem key="navigationItem" title="Jedy Lightsabers" id="0N0-qL-S5C"/>
+                    <navigationItem key="navigationItem" title="Famous Jedies" id="0N0-qL-S5C"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iLE-m8-td0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2265" y="450"/>
         </scene>
-        <!--Lightsabers Table View Controller-->
+        <!--Jedies Table View Controller-->
         <scene sceneID="5aF-V3-pnv">
             <objects>
-                <viewController id="9a0-KG-khh" customClass="LightsabersTableViewController" customModule="designable_custom_view" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ltv-D3-wcz" customClass="LightsabersLiveView" customModule="designable_custom_view" customModuleProvider="target">
+                <viewController id="9a0-KG-khh" customClass="JediesTableViewController" customModule="designable_custom_view" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eUN-zo-eca"/>
+                        <viewControllerLayoutGuide type="bottom" id="DB5-78-I38"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ltv-D3-wcz" customClass="JediesTableLiveView" customModule="designable_custom_view" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qmw-tQ-kO5" customClass="LightsabersLiveView" customModule="designable_custom_view" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8VJ-Qq-OEs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3047" y="450"/>
+            <point key="canvasLocation" x="3083" y="450"/>
         </scene>
     </scenes>
 </document>

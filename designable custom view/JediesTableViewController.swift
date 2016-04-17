@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LightsabersTableViewController: UITableViewController {
+class JediesTableViewController: UITableViewController {
     
     struct Lightsaber {
         let owner: String
@@ -26,12 +26,12 @@ class LightsabersTableViewController: UITableViewController {
     override func loadView() {
         let bundle = NSBundle(forClass: self.dynamicType)
         let array = bundle.loadNibNamed(
-            "LightsabersTableViewController",
+            "JediesTableViewController",
             owner: self,
             options: nil)
-        guard let lightsaberView = array.first as? UIView else {
-            fatalError("Unable to load lightsaber view!") }
-        view = lightsaberView
+        guard let jediesView = array.first as? UIView else {
+            fatalError("Unable to load jedies view!") }
+        view = jediesView
     }
     
     override func viewDidLoad() {

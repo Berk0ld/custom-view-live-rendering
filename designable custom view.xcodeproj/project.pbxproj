@@ -8,26 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		8640DFEC1CC3ABBB0046AE15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8640DFEB1CC3ABBB0046AE15 /* AppDelegate.swift */; };
-		8640DFEE1CC3ABBB0046AE15 /* JedyLightSabersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8640DFED1CC3ABBB0046AE15 /* JedyLightSabersViewController.swift */; };
+		8640DFEE1CC3ABBB0046AE15 /* JedyContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8640DFED1CC3ABBB0046AE15 /* JedyContainerViewController.swift */; };
 		8640DFF11CC3ABBB0046AE15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8640DFEF1CC3ABBB0046AE15 /* Main.storyboard */; };
 		8640DFF31CC3ABBB0046AE15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8640DFF21CC3ABBB0046AE15 /* Assets.xcassets */; };
 		8640DFF61CC3ABBB0046AE15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8640DFF41CC3ABBB0046AE15 /* LaunchScreen.storyboard */; };
-		8640DFFF1CC3AC060046AE15 /* LightsabersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8640DFFD1CC3AC060046AE15 /* LightsabersTableViewController.swift */; };
-		8640E0001CC3AC060046AE15 /* LightsabersTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8640DFFE1CC3AC060046AE15 /* LightsabersTableViewController.xib */; };
-		8640E0021CC3AF380046AE15 /* LightsabersLiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8640E0011CC3AF380046AE15 /* LightsabersLiveView.swift */; };
+		8640DFFF1CC3AC060046AE15 /* JediesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8640DFFD1CC3AC060046AE15 /* JediesTableViewController.swift */; };
+		8640E0001CC3AC060046AE15 /* JediesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8640DFFE1CC3AC060046AE15 /* JediesTableViewController.xib */; };
+		8640E0021CC3AF380046AE15 /* JediesTableLiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8640E0011CC3AF380046AE15 /* JediesTableLiveView.swift */; };
+		867C448C1CC40813000C7F66 /* JedyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867C448B1CC40813000C7F66 /* JedyDetailViewController.swift */; };
+		867C44901CC412B9000C7F66 /* JedyEpisodeAvatarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 867C448F1CC412B9000C7F66 /* JedyEpisodeAvatarView.xib */; };
+		867C44921CC412D5000C7F66 /* JedyEpisodeAvatarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867C44911CC412D5000C7F66 /* JedyEpisodeAvatarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8640DFE81CC3ABBB0046AE15 /* designable custom view.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "designable custom view.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8640DFEB1CC3ABBB0046AE15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8640DFED1CC3ABBB0046AE15 /* JedyLightSabersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JedyLightSabersViewController.swift; sourceTree = "<group>"; };
+		8640DFED1CC3ABBB0046AE15 /* JedyContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JedyContainerViewController.swift; sourceTree = "<group>"; };
 		8640DFF01CC3ABBB0046AE15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8640DFF21CC3ABBB0046AE15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8640DFF51CC3ABBB0046AE15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8640DFF71CC3ABBB0046AE15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8640DFFD1CC3AC060046AE15 /* LightsabersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightsabersTableViewController.swift; sourceTree = "<group>"; };
-		8640DFFE1CC3AC060046AE15 /* LightsabersTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LightsabersTableViewController.xib; sourceTree = "<group>"; };
-		8640E0011CC3AF380046AE15 /* LightsabersLiveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightsabersLiveView.swift; sourceTree = "<group>"; };
+		8640DFFD1CC3AC060046AE15 /* JediesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JediesTableViewController.swift; sourceTree = "<group>"; };
+		8640DFFE1CC3AC060046AE15 /* JediesTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JediesTableViewController.xib; sourceTree = "<group>"; };
+		8640E0011CC3AF380046AE15 /* JediesTableLiveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JediesTableLiveView.swift; sourceTree = "<group>"; };
+		867C448B1CC40813000C7F66 /* JedyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JedyDetailViewController.swift; sourceTree = "<group>"; };
+		867C448F1CC412B9000C7F66 /* JedyEpisodeAvatarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JedyEpisodeAvatarView.xib; sourceTree = "<group>"; };
+		867C44911CC412D5000C7F66 /* JedyEpisodeAvatarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JedyEpisodeAvatarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,16 +67,35 @@
 			isa = PBXGroup;
 			children = (
 				8640DFEB1CC3ABBB0046AE15 /* AppDelegate.swift */,
-				8640DFFD1CC3AC060046AE15 /* LightsabersTableViewController.swift */,
-				8640E0011CC3AF380046AE15 /* LightsabersLiveView.swift */,
-				8640DFFE1CC3AC060046AE15 /* LightsabersTableViewController.xib */,
-				8640DFED1CC3ABBB0046AE15 /* JedyLightSabersViewController.swift */,
+				867C448E1CC40969000C7F66 /* jedy detail */,
+				867C448D1CC40946000C7F66 /* jedies list */,
 				8640DFEF1CC3ABBB0046AE15 /* Main.storyboard */,
 				8640DFF21CC3ABBB0046AE15 /* Assets.xcassets */,
 				8640DFF41CC3ABBB0046AE15 /* LaunchScreen.storyboard */,
 				8640DFF71CC3ABBB0046AE15 /* Info.plist */,
 			);
 			path = "designable custom view";
+			sourceTree = "<group>";
+		};
+		867C448D1CC40946000C7F66 /* jedies list */ = {
+			isa = PBXGroup;
+			children = (
+				8640DFED1CC3ABBB0046AE15 /* JedyContainerViewController.swift */,
+				8640E0011CC3AF380046AE15 /* JediesTableLiveView.swift */,
+				8640DFFD1CC3AC060046AE15 /* JediesTableViewController.swift */,
+				8640DFFE1CC3AC060046AE15 /* JediesTableViewController.xib */,
+			);
+			name = "jedies list";
+			sourceTree = "<group>";
+		};
+		867C448E1CC40969000C7F66 /* jedy detail */ = {
+			isa = PBXGroup;
+			children = (
+				867C44911CC412D5000C7F66 /* JedyEpisodeAvatarController.swift */,
+				867C448F1CC412B9000C7F66 /* JedyEpisodeAvatarView.xib */,
+				867C448B1CC40813000C7F66 /* JedyDetailViewController.swift */,
+			);
+			name = "jedy detail";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,9 +156,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				867C44901CC412B9000C7F66 /* JedyEpisodeAvatarView.xib in Resources */,
 				8640DFF61CC3ABBB0046AE15 /* LaunchScreen.storyboard in Resources */,
 				8640DFF31CC3ABBB0046AE15 /* Assets.xcassets in Resources */,
-				8640E0001CC3AC060046AE15 /* LightsabersTableViewController.xib in Resources */,
+				8640E0001CC3AC060046AE15 /* JediesTableViewController.xib in Resources */,
 				8640DFF11CC3ABBB0046AE15 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,10 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8640DFFF1CC3AC060046AE15 /* LightsabersTableViewController.swift in Sources */,
-				8640DFEE1CC3ABBB0046AE15 /* JedyLightSabersViewController.swift in Sources */,
+				867C44921CC412D5000C7F66 /* JedyEpisodeAvatarController.swift in Sources */,
+				8640DFFF1CC3AC060046AE15 /* JediesTableViewController.swift in Sources */,
+				8640DFEE1CC3ABBB0046AE15 /* JedyContainerViewController.swift in Sources */,
 				8640DFEC1CC3ABBB0046AE15 /* AppDelegate.swift in Sources */,
-				8640E0021CC3AF380046AE15 /* LightsabersLiveView.swift in Sources */,
+				8640E0021CC3AF380046AE15 /* JediesTableLiveView.swift in Sources */,
+				867C448C1CC40813000C7F66 /* JedyDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +328,7 @@
 				8640DFFC1CC3ABBB0046AE15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

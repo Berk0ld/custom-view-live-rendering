@@ -8,26 +8,33 @@
 
 import UIKit
 
-@IBDesignable
-final class LightsabersLiveView: UIView {
+@IBDesignable final class JediesTableLiveView: UIView {
     override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
+    
+        // Create view controller with famous Jedy's
+        let jediesTableViewController = JediesTableViewController()
         
-        let lightsabersViewController = LightsabersTableViewController()
-        lightsabersViewController.view.frame = frame
-        
+        // update frame
+        jediesTableViewController.view.frame = frame
+
+        // Create parent view controller for size class support
         let parentViewController = UIViewController(); do {
             parentViewController.view.frame = frame
-            parentViewController.view.addSubview(lightsabersViewController.view)
-            parentViewController.addChildViewController(lightsabersViewController)
+            parentViewController.view.addSubview(jediesTableViewController.view)
+            parentViewController.addChildViewController(jediesTableViewController)
         }
         
+        // Set Size Class for jediesTableViewController
         parentViewController.setOverrideTraitCollection(
-            preferredTraitCollection, forChildViewController: lightsabersViewController)
+            preferredTraitCollection, forChildViewController: jediesTableViewController)
         addSubview(parentViewController.view)
+        
+        // Force layout update
         layoutIfNeeded()
     }
     
+    // Preferred trait collection
     var preferredTraitCollection: UITraitCollection {
         func sizeClass(forSize size: CGFloat) -> UIUserInterfaceSizeClass {
             precondition(size >= 0, "Width should be non negative")
