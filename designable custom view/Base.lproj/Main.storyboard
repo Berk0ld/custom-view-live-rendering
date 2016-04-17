@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2uO-I2-kAe">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="FWI-W2-i0v">
+            <objects>
+                <viewController id="o60-A7-5R5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M4e-kh-tiD"/>
+                        <viewControllerLayoutGuide type="bottom" id="vM3-cZ-Efb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ocx-Id-pbm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ecJ-97-mj8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1457" y="1167"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="23M-Ew-dBh">
+            <objects>
+                <navigationController id="63W-c7-o9G" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wUf-TV-Tpi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="RNc-Zw-coJ" kind="relationship" relationship="rootViewController" id="b7f-XT-m3u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CCc-3c-W1g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1457" y="442"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="h45-b3-f8h">
+            <objects>
+                <splitViewController id="2uO-I2-kAe" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="63W-c7-o9G" kind="relationship" relationship="masterViewController" id="aen-yK-uFz"/>
+                        <segue destination="o60-A7-5R5" kind="relationship" relationship="detailViewController" id="TGo-ey-8up"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FYT-cM-cFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="689" y="750"/>
+        </scene>
+        <!--Jedy Lightsabers-->
+        <scene sceneID="EDJ-p3-tVF">
+            <objects>
+                <viewController title="Jedy Lightsabers" id="RNc-Zw-coJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VCH-Pb-Gcx"/>
+                        <viewControllerLayoutGuide type="bottom" id="8jd-Z2-bbg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YCw-sk-bLh">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mIu-QF-Z76">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                                <connections>
+                                    <segue destination="9a0-KG-khh" kind="embed" id="doU-IS-9ni"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="Jedy Lightsabers" id="0N0-qL-S5C"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iLE-m8-td0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2265" y="450"/>
+        </scene>
+        <!--Lightsabers Table View Controller-->
+        <scene sceneID="5aF-V3-pnv">
+            <objects>
+                <viewController id="9a0-KG-khh" customClass="LightsabersTableViewController" customModule="designable_custom_view" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ltv-D3-wcz" customClass="LightsabersLiveView" customModule="designable_custom_view" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qmw-tQ-kO5" customClass="LightsabersLiveView" customModule="designable_custom_view" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8VJ-Qq-OEs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3047" y="450"/>
+        </scene>
+    </scenes>
+</document>
