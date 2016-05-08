@@ -27,27 +27,11 @@ import UIKit
         
         // Set Size Class for jediesTableViewController
         parentViewController.setOverrideTraitCollection(
-            preferredTraitCollection, forChildViewController: jediesTableViewController)
+            UIKitHelper.preferredTraitCollection(forFrame: frame),
+            forChildViewController: jediesTableViewController)
         addSubview(parentViewController.view)
         
         // Force layout update
         layoutIfNeeded()
-    }
-    
-    // Preferred trait collection
-    var preferredTraitCollection: UITraitCollection {
-        func sizeClass(forSize size: CGFloat) -> UIUserInterfaceSizeClass {
-            precondition(size >= 0, "Width should be non negative")
-            
-            if size > 400 {
-                return .Regular
-            } else {
-                return .Compact
-            }
-        }
-        
-        return UITraitCollection(traitsFromCollections: [
-            UITraitCollection(verticalSizeClass: sizeClass(forSize: frame.width)),
-            UITraitCollection(horizontalSizeClass: sizeClass(forSize: frame.height)) ])
     }
 }

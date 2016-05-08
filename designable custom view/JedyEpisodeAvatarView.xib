@@ -1,42 +1,94 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JedyEpisodeAvatarController" customModule="designable_custom_view" customModuleProvider="target">
+            <connections>
+                <outlet property="avatarImageView" destination="58Z-3Z-6X7" id="qiv-8U-Pwl"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JedyEpisodeAvatarView" customModule="designable_custom_view" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RN9-BP-Jxi">
-                    <rect key="frame" x="221" y="372" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KcV-4b-0ya">
-                    <rect key="frame" x="433" y="402" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jle-kO-YDX">
-                    <rect key="frame" x="504" y="380" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JF7-BF-YtH">
-                    <rect key="frame" x="510" y="331" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2q-Xl-6Hn">
-                    <rect key="frame" x="322" y="342" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ph5-9T-PLC">
-                    <rect key="frame" x="496" y="418" width="63" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgS-vr-FUr">
+                    <rect key="frame" x="8" y="8" width="137" height="30"/>
                     <state key="normal" title="Episode I"/>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whf-GK-lhH">
+                    <rect key="frame" x="408" y="8" width="137" height="30"/>
+                    <state key="normal" title="Episode III"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOa-bi-wfV">
+                    <rect key="frame" x="213" y="8" width="136" height="30"/>
+                    <state key="normal" title="Episode II"/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="58Z-3Z-6X7">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="MOa-bi-wfV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="18" id="1JO-yf-cN8"/>
+                <constraint firstItem="MOa-bi-wfV" firstAttribute="width" secondItem="Whf-GK-lhH" secondAttribute="width" id="J9R-HH-9ae"/>
+                <constraint firstAttribute="trailing" secondItem="58Z-3Z-6X7" secondAttribute="trailing" id="JxL-I2-5Gn"/>
+                <constraint firstItem="KgS-vr-FUr" firstAttribute="top" secondItem="MOa-bi-wfV" secondAttribute="top" id="PlI-90-4Hh"/>
+                <constraint firstItem="KgS-vr-FUr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Uoq-BV-Daw"/>
+                <constraint firstItem="58Z-3Z-6X7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="W10-hE-v4Z"/>
+                <constraint firstAttribute="bottom" secondItem="58Z-3Z-6X7" secondAttribute="bottom" constant="60" id="WkG-KX-HsT">
+                    <variation key="widthClass=compact" constant="60"/>
+                    <variation key="heightClass=compact-widthClass=compact" constant="60"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="Whf-GK-lhH" secondAttribute="trailing" constant="8" id="ckN-JF-pvb">
+                    <variation key="widthClass=compact" constant="8"/>
+                    <variation key="heightClass=compact-widthClass=compact" constant="8"/>
+                    <variation key="heightClass=regular-widthClass=compact" constant="8"/>
+                </constraint>
+                <constraint firstItem="58Z-3Z-6X7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="60" id="dIM-wd-joA">
+                    <variation key="widthClass=compact" constant="60"/>
+                    <variation key="heightClass=compact-widthClass=compact" constant="60"/>
+                    <variation key="heightClass=compact-widthClass=regular" constant="65"/>
+                    <variation key="heightClass=regular-widthClass=compact" constant="60"/>
+                </constraint>
+                <constraint firstItem="MOa-bi-wfV" firstAttribute="leading" secondItem="KgS-vr-FUr" secondAttribute="trailing" constant="10" id="duV-I2-LSJ">
+                    <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                </constraint>
+                <constraint firstItem="Whf-GK-lhH" firstAttribute="top" secondItem="MOa-bi-wfV" secondAttribute="top" id="mGd-cT-nsl"/>
+                <constraint firstItem="KgS-vr-FUr" firstAttribute="width" secondItem="MOa-bi-wfV" secondAttribute="width" id="n8T-H1-sNK"/>
+                <constraint firstItem="Whf-GK-lhH" firstAttribute="leading" secondItem="MOa-bi-wfV" secondAttribute="trailing" constant="10" id="r46-oe-qgh">
+                    <variation key="widthClass=compact" constant="10"/>
+                    <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                    <variation key="heightClass=regular-widthClass=compact" constant="10"/>
+                </constraint>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <variation key="heightClass=compact-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="KgS-vr-FUr"/>
+                    <include reference="Whf-GK-lhH"/>
+                    <include reference="MOa-bi-wfV"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="PlI-90-4Hh"/>
+                    <include reference="Uoq-BV-Daw"/>
+                    <include reference="n8T-H1-sNK"/>
+                    <include reference="JxL-I2-5Gn"/>
+                    <include reference="W10-hE-v4Z"/>
+                    <include reference="WkG-KX-HsT"/>
+                    <include reference="dIM-wd-joA"/>
+                    <include reference="1JO-yf-cN8"/>
+                    <include reference="J9R-HH-9ae"/>
+                    <include reference="duV-I2-LSJ"/>
+                    <include reference="ckN-JF-pvb"/>
+                    <include reference="mGd-cT-nsl"/>
+                    <include reference="r46-oe-qgh"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="918" y="445"/>
         </view>
     </objects>
 </document>

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2uO-I2-kAe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2uO-I2-kAe">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Jedy Detail View Controller-->
@@ -17,23 +18,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oc0-LD-sHm">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oc0-LD-sHm" customClass="JedyAvatarLiveView" customModule="designable_custom_view" customModuleProvider="target">
                                 <rect key="frame" x="20" y="28" width="560" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="28" width="350" height="136"/>
+                                </variation>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwF-Sc-qOY">
-                                <rect key="frame" x="384" y="302" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ecJ-97-mj8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1457" y="1167"/>
+            <point key="canvasLocation" x="1456.5" y="1167"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="23M-Ew-dBh">
@@ -84,6 +82,28 @@
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="mIu-QF-Z76" secondAttribute="bottom" id="430-Sn-xIQ"/>
+                            <constraint firstAttribute="trailing" secondItem="mIu-QF-Z76" secondAttribute="trailing" id="7cE-YA-fve"/>
+                            <constraint firstAttribute="topMargin" secondItem="mIu-QF-Z76" secondAttribute="top" id="NMh-Ww-c7f"/>
+                            <constraint firstItem="mIu-QF-Z76" firstAttribute="leading" secondItem="YCw-sk-bLh" secondAttribute="leading" id="mcY-Bx-P1I"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="430-Sn-xIQ"/>
+                                <exclude reference="7cE-YA-fve"/>
+                                <exclude reference="NMh-Ww-c7f"/>
+                                <exclude reference="mcY-Bx-P1I"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="430-Sn-xIQ"/>
+                                <include reference="7cE-YA-fve"/>
+                                <include reference="NMh-Ww-c7f"/>
+                                <include reference="mcY-Bx-P1I"/>
+                            </mask>
+                        </variation>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="Famous Jedies" id="0N0-qL-S5C"/>
